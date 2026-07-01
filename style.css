@@ -1,0 +1,196 @@
+/* GENERAL */
+
+html {
+  scroll-behavior: smooth; /* smooth scrolling between page sections*/
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+cursor: url('assets/32x32-Pinky-Pixel-Animated--cursor--SweezyCursors.png'), auto;
+
+}
+
+section {
+  margin: 40px auto;  /* margin: 40px top bottom and auto (to align elements centrally) left right*/
+  gap: 30px;/* use gap for putting putting space between any elements in flex-box */
+  max-width: 300px; /* max-width of all elements on site doesnt exceed 300px*/
+}
+
+.common-container {/* .common-container is the class name we used for the gray boxes*/
+  border-radius: 10px;/*border-radius of 10px creates rounded edges on all of the gray boxes and the project images*/
+  height: 100%; /*the common container elements takes height of 100% of the parent element*/
+  justify-content: space-evenly; /* flex-box for even spacing of everything in <pthe common-container class */
+}
+
+h4,
+p {
+  margin: 0; /*to remove their margins to look neater on page*/
+
+}
+
+.btn {
+  width: 120px; /*width for space around buttons*/ 
+  padding: 16px; /* padding within the buttons*/ 
+  background-color: rgb(255, 149, 220);
+  color: white;
+  border: none;
+  border-radius: 12px; /* for rounding the button edges*/
+  cursor: url('assets/32x32-Pinky-Pixel-Animated--pointer--SweezyCursors.png'), auto; /* so when we hover over the button, we see the cursor*/
+  transition: all 300ms ease; /* to transition between different colors when we hover over the button without concern for the link - The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, transition-delay, and transition-behavior. ex: .class-name {transition(property,duration,timingfunction,delay,behavior)} */
+}
+
+/*what we want to happen to the button when someone hovers over the button*/
+.btn:hover {
+  background-color: rgb(0, 153, 56);
+}
+
+/* HERO */
+
+#hero {
+  text-align: center;
+}
+
+#hero h1 {
+  color:rgb(238, 38, 119);
+  background-color: rgb(244, 187, 211) ;
+}
+
+#hero p,h2 {
+  color:rgb(238, 38, 119); /*styling text for paragraphs and h2s in the introduction section*/
+  font-weight: 500;
+}
+
+.hero-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* round edges of the gray boxes*/
+  overflow: hidden; /*images sit in gray boxes but no large images will spill out of boxes */
+  margin: 40px auto;
+}
+
+#hero img {
+  height: 100%; /*% of parent image*/
+  width: 100%;
+  object-fit: cover; /*a way to make profile image fix all sides of box without spilling*/
+}
+
+/* ABOUT */
+
+#about,
+.container,
+.common-container,
+.outer-container {
+  display: flex;
+  align-items: center;
+}
+
+#about,
+.common-container,
+.outer-container {
+  flex-direction: column;
+}
+
+.container {
+  height: 140px;
+  gap: 20px;
+}
+
+.common-container {
+  background-color: rgb(244, 187, 211);
+}
+
+#about p {
+  text-align: justify;
+}
+
+#about .common-container p {
+  text-align: center;
+}
+
+.container div {
+  flex: 1;
+}
+
+/* EXPERIENCE */
+
+#experience {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#experience .container {
+  height: 300px;
+  width: 100%;
+}
+
+/* PROJECTS */
+
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects .container {
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
+  border-radius: 12px;
+  width: 100%;
+}
+
+#projects h4 {
+  padding: 30px 0 20px;
+  color: rgb(246, 134, 189);
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact .container {
+  height: auto;
+}
+
+#contact button {
+  height: 50px;
+  width: 50px;
+  background: none;
+  padding: 0;
+ 
+}
+
+#contact img {
+  height: 100%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  color: rgb(238, 38, 119);
+  margin: 100px auto;
+  a {
+     color: rgb(238, 38, 119);
+     text-decoration: none;
+   font-weight: bold;
+  }
+}
